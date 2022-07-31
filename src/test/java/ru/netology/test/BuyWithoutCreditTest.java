@@ -22,7 +22,7 @@ public class BuyWithoutCreditTest {
     @BeforeEach
     void shouldOpenWeb() {
         DBHelper.cleanDataBase();
-        mainPage = open("http://localhost:8090", MainPage.class);
+        mainPage = open("http://localhost:8080", MainPage.class);
         paymentPage = mainPage.buyWithoutCredit();
     }
 
